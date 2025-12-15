@@ -35,6 +35,7 @@ This Personal Portfolio Website highlights who I am as a developer, the technolo
 
 * HTML5
 * CSS3
+* JavaScript
 * Figma (for layout planning)
 
 ---
