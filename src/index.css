@@ -1,4 +1,6 @@
 /* Home Page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 body {
     background-color: var(--base-color);
     margin: 0;
@@ -14,6 +16,7 @@ body {
     --primary-color: rgb(161, 186, 206);
     --accent-color: #0071ff;
     --gradient-blue: linear-gradient(to right, #4776ce, #2e309e, #222962);
+    font-family: 'Poppins', sans-serif;
 }
 
 .darkmode {
@@ -23,6 +26,7 @@ body {
     --primary-color: #c2c4cd;
     --accent-color: #0071ff;
     --gradient-blue: linear-gradient(to right, #4776ce, #2e309e, #222962);
+    font-family: 'Poppins', sans-serif;
 }
 
 /*Smooth scrolling per nav*/
@@ -42,7 +46,9 @@ html {
     align-items: center;
     padding: 1rem 10%;
     margin: 1rem auto;
-    max-width: 1200px;
+    max-width: 100%;
+    background-color: var(--base-color);
+    font-family: 'Poppins', sans-serif;
 }
 
 section {
@@ -60,20 +66,33 @@ section {
     align-items: center;
     cursor: pointer;
     flex-shrink: 0;
+    border: none;
 }
 
 #theme-switch svg {
     fill: #3a435d; 
+    width: 24px;
+    height: 24px;
 }
-#theme-switch svg:last-child { display: none; }
-.darkmode #theme-switch svg:first-child { display: none; }
-.darkmode #theme-switch svg:last-child { display: block; }
+
+#theme-switch svg:last-child { 
+    display: none; 
+}
+
+.darkmode #theme-switch svg:first-child { 
+    display: none; 
+}
+
+.darkmode #theme-switch svg:last-child { 
+    display: block; 
+}
 
 .header button {
   padding: 1rem 1%;
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  background: transparent;
 }
 
 .header h1 {
@@ -104,6 +123,7 @@ section {
   position: relative;
   padding: 5px 0;
 }
+
 .header ul li a::after {
   content: "";
   position: absolute;
@@ -114,6 +134,7 @@ section {
   background: var(--text-color);
   transition: width 0.3s ease;
 }
+
 .header ul li a:hover::after,
 .header ul li a.active::after {
   width: 100%;
@@ -132,6 +153,7 @@ section {
     max-width: 500px;
     color: var(--text-color);
     flex: 1 1 300px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .name-highlight {
@@ -171,6 +193,8 @@ section {
     font-size: 20px;
     text-decoration: none;
     transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 
 .text .btn:hover {
@@ -192,6 +216,7 @@ section {
     padding: 6rem 20%;
     color: var(--text-color);
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 #about h2 {
@@ -207,6 +232,7 @@ section {
     margin: 1rem auto;
     max-width: 700px;
     text-align: left;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about-card h3 {
@@ -265,6 +291,7 @@ section {
     width: 320px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
 }
 
 .skill-card .icons {
@@ -331,11 +358,12 @@ section {
     margin-top: 300px; 
 }
 
-/*---Project Section---*/
+/* Project Section */
 #project {
   text-align: center;
   padding: 100px 10%;
   color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
 }
 
 #project h2 {
@@ -360,6 +388,7 @@ section {
   width: 300px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
 .project-card:hover {
@@ -403,7 +432,7 @@ section {
   text-decoration: underline;
 }
 
-/*---Contact Page---*/
+/* Contact Page */
 #contact {
   text-align: center;
   padding: 100px 150px;
@@ -421,7 +450,7 @@ section {
   align-items: center;
   justify-content: space-between;
   gap: 4px;
-  height: 400px;
+  min-height: 400px;
 }
 
 .contact-container img {
@@ -469,18 +498,20 @@ section {
   gap: 20px;
 }
 
+.contact-socmed a {
+  display: flex;
+  align-items: center;
+}
+
 .contact-socmed img {
   transition: transform 0.5s ease;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
 .contact-socmed img:hover {
   transform: scale(1.3);
-}
-
-.contact-socmed img {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
 }
 
 .contact-message {
@@ -512,10 +543,22 @@ section {
   background-color: transparent;
   border: 1px solid var(--primary-color);
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
   color: var(--text-color);
   box-sizing: border-box; 
   font-family: 'Poppins';
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--text-color);
+  opacity: 0.6;
 }
 
 .contact-form button {
@@ -528,6 +571,7 @@ section {
   height: 50px;
   width: 150px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .contact-form button:hover {
@@ -535,20 +579,22 @@ section {
     background-image: linear-gradient(to right, #3a5fa8, #1f1f7a, #151744);
 }
 
-/*--FOOTER--*/
+/* FOOTER */
 footer {
   background-image: var(--gradient-blue);
   color: white;
   text-align: center;
-  padding: 0.1px 0;
+  padding: 20px 0;
+  margin-top: 40px;
 }
 
 footer h3 {
   font-size: 18px;
   font-weight: 500;
+  margin: 0;
 }
 
-/* 📱 Tablets and Medium Screens (max-width: 992px) */
+/* Tablets and Medium Screens (max-width: 992px) */
 @media (max-width: 992px) {
   .header {
     padding: 1rem 5%;
@@ -594,7 +640,7 @@ footer h3 {
 
   .contact-container {
     flex-direction: column;
-    height: auto;
+    min-height: auto;
     padding: 20px;
   }
 
@@ -610,7 +656,7 @@ footer h3 {
   }
 }
 
-/* 📲 Mobile Phones (max-width: 768px) */
+/* Mobile Phones (max-width: 768px) */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -648,96 +694,30 @@ footer h3 {
     height: 250px;
   }
 
-  #about {
-    padding: 4rem 5%;
-  }
-
   #skills {
-    padding: 40px 20px;
-  }
-
-  .skills-container {
-    flex-direction: column;
+    padding: 60px 20px;
   }
 
   .skill-card {
     width: 100%;
-    max-width: 320px;
+    max-width: 280px;
   }
 
   .skills-description {
+    width: 100%;
     margin-top: 20px;
-    width: 100%;
-    max-width: 380px;
   }
 
-  .project-card {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .contact-item span {
-    font-size: 14px;
-    word-break: break-word;
-  }
-}
-
-/* 📱 Small Phones (max-width: 480px) */
-@media (max-width: 480px) {
-  .header h1 {
-    font-size: 22px;
-  }
-
-  .header ul {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  section {
-    padding-top: 180px;
-  }
-
-  .content h1 {
-    font-size: 24px;
-  }
-
-  .name-highlight {
-    font-size: 28px;
-  }
-
-  .content p {
-    font-size: 18px;
-  }
-
-  .text .btn {
-    width: 120px;
-    font-size: 16px;
-  }
-
-  .contact-container {
-    padding: 10px;
+  #contact {
+    padding: 50px 20px;
   }
 
   .contact-icon {
     padding: 20px;
   }
 
-  .contact-icon h1 {
-    font-size: 28px;
-  }
-
-  .contact-message h1 {
-    font-size: 28px;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
+  .contact-message {
     width: 100%;
-  }
-
-  .contact-form button {
-    width: 120px;
-    font-size: 16px;
+    margin: 20px 0;
   }
 }
