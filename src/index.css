@@ -400,6 +400,7 @@ section {
   margin-top: 25px;
   max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 .project-card h3 {
@@ -425,7 +426,7 @@ section {
 
 .project-info a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--accent-color);
 }
 
 .project-info a:hover {
