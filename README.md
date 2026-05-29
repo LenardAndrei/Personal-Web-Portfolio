@@ -1,16 +1,51 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern personal portfolio website designed to showcase my skills, projects, and experience as a front-end developer. This repository serves as a professional portfolio for recruiters, hiring managers, and potential collaborators.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 About the Project
 
-## React Compiler
+This Personal Portfolio Website highlights who I am as a developer, the technologies I work with, and the projects I have built. It focuses on clean design, smooth interactions, and a user-friendly experience to effectively present my work.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Responsive and clean layout
+* Smooth scrolling navigation between sections
+* Modern UI with CSS animations and hover effects
+* Gradient text styling for visual emphasis
+* Projects showcase with descriptions
+* Contact section with social media links
+
+---
+
+## 🧩 Sections Included
+
+* **Home** – Introduction and personal branding
+* **About** – Background and short profile
+* **Skills** – Technical skills and tools
+* **Projects** – Selected works and projects
+* **Contact** – Social media and contact links
+
+---
+
+## 🛠️ Built With
+
+* HTML5
+* CSS3
+* JavaScript
+* Figma (for layout planning)
+
+---
+
+## 📬 Contact & Links
+
+* GitHub: [https://github.com/LenardAndrei](https://github.com/LenardAndrei)
+* Facebook: [https://www.facebook.com/andrei.panganiban.98](https://www.facebook.com/andrei.panganiban.98)
+* Instagram: [https://www.instagram.com/lnrdpngnbn_/](https://www.instagram.com/lnrdpngnbn_/)
+
+---
+
+© 2025 Lenard Panganiban
